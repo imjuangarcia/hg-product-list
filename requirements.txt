@@ -1,0 +1,2 @@
+openpyxl==3.0.10
+streamlit-aggrid==0.2.2-2
