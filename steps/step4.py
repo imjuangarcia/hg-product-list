@@ -2,6 +2,7 @@ import streamlit as st
 from fpdf import FPDF
 
 def generate_invoice():
+  # See https://pyfpdf.readthedocs.io/en/latest/Tutorial-es/index.html for a detailed tutorial
   pdf = FPDF()
   pdf.add_page()
   pdf.set_font('Arial', 'B', 16)
