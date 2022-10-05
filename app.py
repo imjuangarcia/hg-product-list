@@ -3,6 +3,7 @@ import streamlit as st
 from steps import step1
 from steps import step2
 from steps import step3
+from steps import step4
 
 # Make the page wide to fit the table
 st.set_page_config(layout="wide")
@@ -28,7 +29,7 @@ else:
     st.stop()
 
 if step3.is_form_submitted():
-  print(st.session_state.invoice_information)
+  step4.generate_invoice()
 
 else:
     step3.reset()
