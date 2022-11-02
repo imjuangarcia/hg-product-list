@@ -43,7 +43,7 @@ def show_all_products():
 
     def store_products():
       if 'selected_products' not in st.session_state:
-        st.session_state.selected_products = df_sel_row
+        st.session_state.selected_products = sel_row
 
     st.write("")
     st.write("")
